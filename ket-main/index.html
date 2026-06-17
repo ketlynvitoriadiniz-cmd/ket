@@ -1,172 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
+</body>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✨ Universo Disney Mágico ✨</title>
-<link rel="stylesheet" href="disney.css">
-</head>
-<body>
+    <title>Document</title>
+</head> 
+<h1>  Enrolados  </h1>
+<h2>  rapunzel    </h2>
+<ul>
+    <li>  enrolados é um filme infantil    </li>
+    <li>   sobre uma princesa perdida        </li>
+    <li>    que fica trancada em uma torre por 18 anos  </li>
+    <li>   com uma mulher que diz ser sua mãe     </li>
+    <li>     um fugitivo do rei salva ela                  </li>
+</ul>
+<hr>
+<ol>
 
-    <header>
-        <div class="stars"></div>
-        <h1 class="title">✨ Universo Disney ✨</h1>
-        <p class="subtitle">Uma jornada mágica pelos clássicos que encantam gerações</p>
-    </header>
-
-    <nav>
-        <button class="nav-btn active" onclick="showSection(0)">Início</button>
-        <button class="nav-btn" onclick="showSection(1)">Enrolados</button>
-        <button class="nav-btn" onclick="showSection(2)">Frozen</button>
-        <button class="nav-btn" onclick="showSection(3)">Outros Clássicos</button>
-        <button class="nav-btn" onclick="showSection(4)">Curiosidades</button>
-    </nav>
-
-    <!-- Início -->
-    <div id="section-0" class="section active">
-        <div style="text-align:center; padding: 60px 20px;">
-            <h2 style="font-size: 3rem; margin-bottom: 30px;">Bem-vindo ao Reino da Magia!</h2>
-            <p style="font-size: 1.4rem; max-width: 800px; margin: 0 auto 40px;">
-                Explore o universo Disney com animações interativas, curiosidades e muita diversão.
-                Clique nos filmes para descobrir mais!
-            </p>
-            <button onclick="showSection(1)" style="font-size: 1.4rem; padding: 20px 50px;">
-                Começar a Aventura →
-            </button>
-        </div>
-    </div>
-
-    <!-- Enrolados -->
-    <div id="section-1" class="section">
-        <h2 style="text-align:center; font-size: 3rem; margin-bottom: 40px;">Enrolados (Tangled)</h2>
-        
-        <div class="movie-grid">
-            <div class="card">
-                <h3>🌟 A História</h3>
-                <p>Rapunzel, uma princesa com cabelos mágicos dourados, foi sequestrada quando bebê pela vilã Mother Gothel, que usava seu cabelo para manter a juventude. Trancada em uma torre por 18 anos, ela sonha em ver as lanternas flutuantes que aparecem todo ano no dia de seu aniversário.</p>
-                
-                <div class="character">
-                    <img src="https://i.ibb.co/7tY8XqN/rapunzel.jpg" alt="Rapunzel">
-                    <div>
-                        <strong>Rapunzel</strong><br>
-                        "Aventura é lá fora!"<br>
-                        Poder: Cabelos curativos e brilhantes
-                    </div>
-                </div>
-
-                <div class="character">
-                    <img src="https://i.ibb.co/K0Z5v0K/flynn.jpg" alt="Flynn Rider">
-                    <div>
-                        <strong>Flynn Rider (Eugene Fitzherbert)</strong><br>
-                        Ladrão charmoso que se torna herói
-                    </div>
-                </div>
-            </div>
-
-            <div class="movie-card" onclick="toggleFact(this)">
-                <img src="https://i.ibb.co/0jYJ0zJ/tangled-poster.jpg" alt="Enrolados">
-                <div class="movie-overlay">
-                    <h3>Curiosidades Animadas</h3>
-                    <div class="fact">• O cabelo de Rapunzel tem 70 metros de comprimento!</div>
-                    <div class="fact">• Pascal, o camaleão, foi inspirado no animal de estimação da filha de um animador</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Frozen -->
-    <div id="section-2" class="section">
-        <h2 style="text-align:center; font-size: 3rem; margin-bottom: 40px;">Frozen: Uma Aventura Congelante</h2>
-        
-        <div class="movie-grid">
-            <div class="card">
-                <h3>❄️ A História</h3>
-                <p>Elsa, a Rainha do Gelo, foge após revelar seus poderes. Sua irmã Anna parte em uma jornada épica com Kristoff, Sven e Olaf para trazer Elsa de volta e salvar o reino de Arendelle do eterno inverno.</p>
-                
-                <div class="character">
-                    <img src="https://i.ibb.co/5YqZfY8/elsa.jpg" alt="Elsa">
-                    <div>
-                        <strong>Elsa</strong><br>
-                        "Let it go!"<br>
-                        Poder: Criação de gelo e neve
-                    </div>
-                </div>
-
-                <div class="character">
-                    <img src="https://i.ibb.co/3zKXz8k/anna.jpg" alt="Anna">
-                    <div>
-                        <strong>Anna</strong><br>
-                        Corajosa, otimista e cheia de amor
-                    </div>
-                </div>
-            </div>
-
-            <div class="movie-card" onclick="toggleFact(this)">
-                <img src="https://i.ibb.co/8XzL9pK/frozen-poster.jpg" alt="Frozen">
-                <div class="movie-overlay">
-                    <h3>Fatos Mágicos</h3>
-                    <div class="fact">• "Let It Go" ganhou o Oscar de Melhor Canção Original</div>
-                    <div class="fact">• Olaf foi criado para trazer humor e leveza à história</div>
-                    <div class="fact">• O filme é inspirado no conto "A Rainha da Neve" de Hans Christian Andersen</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Outros Clássicos -->
-    <div id="section-3" class="section">
-        <h2 style="text-align:center; font-size: 3rem; margin-bottom: 40px;">Outros Clássicos Disney</h2>
-        
-        <div class="movie-grid">
-            <div class="card" style="background: linear-gradient(135deg, #ff8c00, #ffd700); color: #222;">
-                <h3>O Rei Leão (1994)</h3>
-                <p>Simba aprende a assumir seu lugar como rei da savana após a morte trágica de seu pai Mufasa.</p>
-            </div>
-            <div class="card" style="background: linear-gradient(135deg, #1e90ff, #00ced1); color: #222;">
-                <h3>Aladdin (1992)</h3>
-                <p>Um jovem ladrão encontra uma lâmpada mágica com um Gênio que realiza três desejos.</p>
-            </div>
-            <div class="card" style="background: linear-gradient(135deg, #ff1493, #ba55d3);">
-                <h3>A Pequena Sereia (1989)</h3>
-                <p>Ariel troca sua voz por pernas para viver entre os humanos.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Curiosidades -->
-    <div id="section-4" class="section">
-        <h2 style="text-align:center; font-size: 3rem; margin-bottom: 40px;">Curiosidades do Universo Disney</h2>
-        
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="card">
-                    <strong>1928</strong> - Mickey Mouse surge em "Steamboat Willie"
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="card">
-                    <strong>1937</strong> - Primeira animação longa: Branca de Neve e os Sete Anões
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="card">
-                    <strong>1955</strong> - Inauguração da Disneyland na Califórnia
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="card">
-                    <strong>2019</strong> - Disney+ chega ao mundo
-                </div>
-            </div>
-        </div>
-
-        <div style="text-align:center; margin-top: 60px;">
-            <button onclick="surpriseMe()">Surpreenda-me com um Fato!</button>
-        </div>
-    </div>
-
-    <footer style="text-align:center; padding: 60px; background: rgba(0,0,0,0.8);">
-        <p>Made with ❤️ e muita magia Disney • 2026</p>
-    </footer>
+    <h1> frozen        </h1>
+    <h1>  uma era gelada </h1>
+    <li>  O filme é sobre uma menina que se chama Elsa </li>
+    <li>    Ela tem poderes de gelo                                        </li>
+<ol>
 </body>
 </html>
